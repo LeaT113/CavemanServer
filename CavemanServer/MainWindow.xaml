@@ -1,0 +1,26 @@
+﻿<Window x:Class="CavemanServer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CavemanServer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Loaded="Grid_Loaded">
+        <TextBlock Text="Client" Margin="10,10,702,389" Width="80" Height="20"/>
+        <TextBox Name="ClientConnectIP" Width="120" Height="20" Margin="51,10,621,389"/>
+
+        <Button Click="Client_Connect" Width="80" Height="20" Margin="177,10,535,389" Content="Connect"/>
+        <Button Click="Client_Disconnect" Width="80" Height="20" Margin="262,10,450,389" Content="Disconnect"/>
+
+        <TextBlock Name="ClientTextBlock" Margin="10,48,450,10"/>
+
+
+        <TextBlock Text="Server" Margin="410,10,302,389" Width="80" Height="20"/>
+        <Button Click="Server_Disconnect" Width="80" Height="20" Margin="657,10,55,389" Content="Disconnect"/>
+        <TextBlock Name="ServerTextBlock" Margin="410,48,50,10"/>
+        <TextBox x:Name="ServerIP" Width="120" Height="20" Margin="447,10,225,389"/>
+        <Button Click="Server_Start" Width="80" Height="20" Margin="572,10,140,389" Content="Start"/>
+
+    </Grid>
+</Window>
